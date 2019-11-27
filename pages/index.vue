@@ -8,6 +8,8 @@
       xs12
       sm8
       md6
+      lg6
+      xl6
     >
       <v-card>
         <v-card-title class="headline">
@@ -15,21 +17,24 @@
         </v-card-title>
         <v-card-actions>
           <v-spacer />
-          <v-container v-for="bus_count in bus_counts">
-            <v-btn
-              v-bind:color="bus_count.unique_rider_count_for_the_next_bus.color"
-              nuxt
-              to=""
-              height="auto"
-            >
-              {{ bus_count.from_office_brunch.name }}
-              →
-              {{ bus_count.to_office_brunch.name }}
-              <br>
-              発車時刻：{{ bus_count.next_close_count_datetime_for_today || 'データなし' }}<br>
-              {{ bus_count.unique_rider_count_for_the_next_bus.count }}人
-            </v-btn>
-          </v-container>
+          <v-layout row wrap justify-center="">
+            <v-flex v-for="bus_count in bus_counts" style="margin: 0.25em">
+              <v-btn
+                v-bind:color="bus_count.unique_rider_count_for_the_next_bus.color"
+                nuxt
+                to=""
+                height="auto"
+                width="100%"
+              >
+                {{ bus_count.from_office_brunch.name }}
+                →
+                {{ bus_count.to_office_brunch.name }}
+                <br>
+                発車時刻：{{ bus_count.next_close_count_datetime_for_today || 'データなし' }}<br>
+                {{ bus_count.unique_rider_count_for_the_next_bus.count }}人
+              </v-btn>
+            </v-flex>
+          </v-layout>
         </v-card-actions>
       </v-card>
     </v-flex>

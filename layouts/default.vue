@@ -110,7 +110,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'バス乗車人数テストサイト'
+      title: 'バス乗車人数サイト'
     }
   }
 }
