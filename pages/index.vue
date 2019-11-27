@@ -84,7 +84,7 @@ export default {
       axios.get('/api/bus_route/?format=json').then((res) => {
         this.bus_counts = res.data
       })
-      setTimeout(updateInfo, 10000)
+      setTimeout(updateInfo, 4000)
     }
     updateInfo()
   }
