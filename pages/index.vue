@@ -26,12 +26,19 @@
                 height="auto"
                 width="100%"
               >
-                {{ bus_count.from_office_brunch.name }}
-                →
-                {{ bus_count.to_office_brunch.name }}
-                <br>
-                発車時刻：{{ bus_count.next_close_count_datetime_for_today || 'データなし' }}<br>
-                {{ bus_count.unique_rider_count_for_the_next_bus.count }}人
+                <v-layout column>
+                  <span class="display-1">
+                    {{ bus_count.from_office_brunch.name }}
+                    →
+                    {{ bus_count.to_office_brunch.name }}
+                    <span>：</span>
+                    {{ bus_count.unique_rider_count_for_the_next_bus.count }}人
+                  </span>
+                  <br>
+                  <span class="title">
+                    発車時刻：{{ bus_count.next_close_count_datetime_for_today || 'データなし' }}<br>
+                  </span>
+                </v-layout>
               </v-btn>
             </v-flex>
           </v-layout>
