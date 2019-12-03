@@ -32,9 +32,8 @@
                     →
                     {{ bus_count.to_office_brunch.name }}
                     <span>：</span>
-                    {{ bus_count.unique_rider_count_for_the_next_bus.count }}人
+                    {{ bus_count.unique_rider_count_for_the_next_bus.count }}/9人
                   </span>
-                  <br>
                   <span class="title">
                     発車時刻：{{ bus_count.next_close_count_datetime_for_today || 'データなし' }}<br>
                   </span>
