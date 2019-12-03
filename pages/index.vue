@@ -13,7 +13,7 @@
     >
       <v-card>
         <v-card-title class="headline">
-          バス乗車人数検知
+          バス待機列人数カウント
         </v-card-title>
         <v-card-actions>
           <v-spacer />
@@ -60,11 +60,11 @@ export default {
         {
           from_office_brunch: {
             id: 1,
-            name: '大崎'
+            name: 'サンプル'
           },
           to_office_brunch: {
             id: 2,
-            name: '霞が関'
+            name: 'です'
           },
           'next_close_count_datetime_for_today': '2019-11-27T10:00:00+09:00',
           unique_rider_count_for_the_next_bus: {
@@ -75,11 +75,11 @@ export default {
         {
           from_office_brunch: {
             id: 2,
-            name: '霞が関'
+            name: 'さん'
           },
           to_office_brunch: {
             id: 1,
-            name: '大崎'
+            name: 'ぷる'
           },
           'next_close_count_datetime_for_today': '2019-11-27T10:00:00+09:00',
           unique_rider_count_for_the_next_bus: {

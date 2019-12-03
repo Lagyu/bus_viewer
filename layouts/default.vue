@@ -83,7 +83,7 @@
       :fixed="fixed"
       app
     >
-      <span>&copy; 2019</span>
+      <span>&copy; 2019 IoT dojo</span>
     </v-footer>
   </v-app>
 </template>
@@ -98,7 +98,7 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Home',
           to: '/'
         },
         {
