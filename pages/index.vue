@@ -31,7 +31,7 @@
                     {{ bus_count.from_office_brunch.name }}
                     →
                     {{ bus_count.to_office_brunch.name }}
-                    <span>：</span>
+                    :
                     {{ bus_count.unique_rider_count_for_the_next_bus.count }}/9人
                   </span>
                   <span class="title">
