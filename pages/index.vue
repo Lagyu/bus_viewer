@@ -35,7 +35,7 @@
                     {{ bus_count.unique_rider_count_for_the_next_bus.count }}/9人
                   </span>
                   <span class="title">
-                    発車時刻：{{ bus_count.next_close_count_datetime_for_today || 'データなし' }}<br>
+                    発車時刻：{{ bus_count.next_close_count_datetime_for_today ? ('0' + new Date(bus_count.next_close_count_datetime_for_today).getHours()).slice(-2) + ':' + ('0' + new Date(bus_count.next_close_count_datetime_for_today).getMinutes()).slice(-2) : 'データなし' }}<br>
                   </span>
                 </v-layout>
               </v-btn>
